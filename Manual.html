@@ -4,15 +4,30 @@
 <head>
 
     <title>Aqui está contido o título da página na aba do navegador</title>
-
     <meta charset="UTF-8"/> <!--Essa Tag serve para renderizar conrtamente os caracteres-->
-
     <meta name="Description" content="Texto de descrição da página Web" />
-
     <meta name="author" content="Matt"/> <!--Essa tag serve para trazer dados sobre o autor da página-->
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!--Essa tag serve para seleionar a proporção e escala da página em diversos dispositivos-->
+
+    <!--Essa tag serve para adcionar parametros de estilização em CSS-->
+    <style type="text/css"> 
+        body {
+            background-color: rgb(90, 90, 90);
+        }
+
+    </style> 
+
+    <!--Essa tag é responsável por conectar um arquivo de CSS externo a página web
+        rel = Relationship, style = tipo de atributo, href = endereço de arquivo de referência-->
+    <link rel="stylesheet" style="text/css" href="estilo.css"/>
+
+    <!--Essa tag é responsável por importar um arquivo JavaScript externo a pagina Web
+        src = endereço do arquivo a ser importado.-->
+    <script type="text/javascript" src="teste.js">
+        alert("Olá Mundo!");
+    </script>
+
 
 </head>
 
