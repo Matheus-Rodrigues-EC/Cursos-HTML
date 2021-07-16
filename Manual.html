@@ -2,26 +2,28 @@
 <html>
 
 <!-- Ininio do cabeçalho -->
+
 <head>
 
     <title>Aqui está contido o título da página na aba do navegador</title>
-    <meta charset="UTF-8"/> <!--Essa Tag serve para renderizar conrtamente os caracteres-->
+    <meta charset="UTF-8" />
+    <!--Essa Tag serve para renderizar conrtamente os caracteres-->
     <meta name="Description" content="Texto de descrição da página Web" />
-    <meta name="author" content="Matt"/> <!--Essa tag serve para trazer dados sobre o autor da página-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="Matt" />
+    <!--Essa tag serve para trazer dados sobre o autor da página-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Essa tag serve para seleionar a proporção e escala da página em diversos dispositivos-->
 
     <!--Essa tag serve para adcionar parametros de estilização em CSS-->
-    <style type="text/css"> 
+    <style type="text/css">
         body {
             background-color: rgb(0, 102, 255);
         }
-
-    </style> 
+    </style>
 
     <!--Essa tag é responsável por conectar um arquivo de CSS externo a página web
         rel = Relationship, style = tipo de atributo, href = endereço de arquivo de referência-->
-    <link rel="stylesheet" style="text/css" href="estilo.css"/>
+    <link rel="stylesheet" style="text/css" href="estilo.css" />
 
     <!--Essa tag é responsável por importar um arquivo JavaScript externo a pagina Web
         src = endereço do arquivo a ser importado.-->
@@ -31,7 +33,7 @@
 
     <!--Essa tag serve para dicionar uma imagem
         src = Endereço da imagem, Alt = texto alternativo a imagem-->
-    <img src="Imagens/spidercat.jpg" alt="Imagens contendo o spider-octocat" title="spider-octocat"/>
+    <img src="Imagens/spidercat.jpg" alt="Imagens contendo o spider-octocat" title="spider-octocat" />
 
 </head>
 <!-- Fim do cabeçalho -->
@@ -48,19 +50,19 @@
     <h2>America do Sul</h2>
     <p>Lorem <span>Ipsum is</span> simply dummy text of the printing and typesetting industry.
     </p>
-    
+
     <h3>Brasil</h3>
     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
     </p>
-    
+
     <h4>Ceará</h4>
     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
     </p>
-    
+
     <h5>Quixadá</h5>
     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
     </p>
-    
+
     <h6>Centro</h6>
     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
     </p>
@@ -79,12 +81,12 @@
     </p>
 
     <a href="htps://google.com" title="Link para o google">
-        <img src="Imagens/Iron-octocat.jpg"/>
+        <img src="Imagens/Iron-octocat.jpg" />
     </a>
     <!-- Fim tipos de link -->
 
-    <img src="https://i.pinimg.com/564x/e2/46/90/e246903e175fcea42fc43de55043366e.jpg"
-                alt="Homem de ferro" title="Homem de ferro" />
+    <img src="https://i.pinimg.com/564x/e2/46/90/e246903e175fcea42fc43de55043366e.jpg" alt="Homem de ferro"
+        title="Homem de ferro" />
 
     <!-- Esta Tag é responsável por adicionar um video a página Web
          Wigth define a altura e height define a largura, controls fornece os controles do reprodutor-->
@@ -106,14 +108,18 @@
 
     <!--Lista de Definição-->
     <dl>
-        <dt>Palavra 1</dt> <!--Essa tag Simboliza a definição da ordenação-->
-        <dd>Explicação da palavra 1</dd> <!--Carrega a definição do conteúdo da Tag dt-->
+        <dt>Palavra 1</dt>
+        <!--Essa tag Simboliza a definição da ordenação-->
+        <dd>Explicação da palavra 1</dd>
+        <!--Carrega a definição do conteúdo da Tag dt-->
     </dl>
 
     <!-- Tabelas e seus atributos-->
     <table>
-        <thead><!--Essa tag é o cabeçalho da tabela-->
-            <tr><!--Essa tag equivale ao header, porém, apenas para a tabela-->
+        <thead>
+            <!--Essa tag é o cabeçalho da tabela-->
+            <tr>
+                <!--Essa tag equivale ao header, porém, apenas para a tabela-->
                 <!--Essa tag guarda as colunas do cabeçalho-->
                 <th>Mês da Atividade</th>
                 <th>Nome da Atividade</th>
@@ -121,8 +127,9 @@
         </thead>
 
         <tbody>
-            <tr> <!--Essa tag adiciona uma linha de conteúdo à tabela-->
-                <td colspan="2" >Janeiro</td>
+            <tr>
+                <!--Essa tag adiciona uma linha de conteúdo à tabela-->
+                <td colspan="2">Janeiro</td>
                 <!-- o Atributo colspan preenche a coluna vazia da tabela-->
             </tr>
             <tr>
@@ -144,12 +151,58 @@
     </table>
 
     <!-- Divisões-->
-    <section><!--Essa tag gerencia as divisões-->
-        <div> <!-- A tag Div cria blocos de conteúdo, funcionando com um conteiner-->
+    <section>
+        <!--Essa tag gerencia as divisões-->
+        <div>
+            <!-- A tag Div cria blocos de conteúdo, funcionando com um conteiner-->
 
         </div>
     </section>
-    
+
+    <!--Formulários e seus atributos-->
+    <form action="#" method="POST">
+        <!--Essa é a tag que adiciona um formulário a página-->
+        <!-- O atributo action dis para onde enviar os dados do formulário-->
+        <!-- O atributo method indic qual o protocolo http a ser seguido-->
+
+        <label for="campo1">Nome</label>
+        <input type="text" name="nome" id="campo1" /> <!-- Tag que recebe algum texto ou numero-->
+
+        <fieldset>
+            <label for="campo2">Iteresses de Estudo</label>
+            <select name="Interesses" id="campo2">
+                <!--Tag que adiciona um campo que pode ser selecionado-->
+                <option value="1">Vendas</option>
+                <option value="2">Marketing</option>
+           </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Iteresses de Estudo</legend>
+
+            <!-- Para o uso do tipo radio, o atributo name dever ser o mesmo-->
+            <label for="campo31">Programação</label>
+            <input type="radio" name="Interesses2" value="1" id="campo31" />
+            <label for="campo32">Design</label>
+            <input type="radio" name="Interesses2" value="2" id="campo32"/>
+        </fieldset>
+
+        <fieldset>
+            <legend>Iteresses de Estudo</legend>
+
+            <!-- Para o uso do tipo chakcbox, o atributo name dever ser o mesmo-->
+            <label for="campo41">mecanica</label>
+            <input type="checkbox" name="Interesses2" value="1" id="campo41"/>
+            <label for="campo42">Fisica</label>
+            <input type="checkbox" name="Interesses2" value="2" id="campo42"/>
+        </fieldset>
+
+
+        
+
+        <input type="submit" value="Enviar o formulário" />
+
+    </form>
 
 
     <Body>
