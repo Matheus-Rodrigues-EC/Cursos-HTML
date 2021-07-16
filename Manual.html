@@ -110,6 +110,42 @@
         <dd>Explicação da palavra 1</dd> <!--Carrega a definição do conteúdo da Tag dt-->
     </dl>
 
+    <!-- Tabelas e seus atributos-->
+    <table>
+        <thead><!--Essa tag é o cabeçalho da tabela-->
+            <tr><!--Essa tag equivale ao header, porém, apenas para a tabela-->
+                <!--Essa tag guarda as colunas do cabeçalho-->
+                <th>Mês da Atividade</th>
+                <th>Nome da Atividade</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr> <!--Essa tag adiciona uma linha de conteúdo à tabela-->
+                <td colspan="2" >Janeiro</td>
+                <!-- o Atributo colspan preenche a coluna vazia da tabela-->
+            </tr>
+            <tr>
+                <td>Fevereiro</td>
+                <td rowspan="2">Meditação</td>
+                <!-- A tag rowsapn preenche as N linhas abaixo dela com o conteudo selecionado-->
+            </tr>
+            <tr>
+                <td>Março</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Total de Atividades: </td>
+                <td>2 Atividades</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+
+
     <Body>
 
     </Body>
