@@ -201,7 +201,39 @@
 
     </form>
 
-    
+
+    <p id="Texto-Referencia"> 
+        Para quem gosta de ação, a saga Velozes e Furiosos nunca decepcionou. 
+        Desta vez sem a presença de Vin Diesel, que se desentendeu com Dwayne 
+        anteriormente, não é uma sequência.
+    </p>
+
+    <p> 
+        Para quem gosta de ação, a saga Velozes e Furiosos nunca decepcionou. 
+        Desta vez sem a presença de Vin Diesel, que se desentendeu com Dwayne 
+        anteriormente, não é uma sequência.
+    </p>
+
+    <script type="text/javascript">
+        
+        var paragrafo = document.getElementById("Texto-Referencia");
+
+        paragrafo.style.color = "red";
+
+        paragrafo.innerText = "Nissan Skyline";
+
+    </script><!-- O atributo document.getElementById chama um elemnto pelo ID-->
+
+    <button id="botao1" onclick="atualizar()">Atualizar o texto</button>
+
+    <script type="text/javascript">
+        function atualizar(){
+            var texto1 = document.getElementById("Texto-Referencia");
+
+            texto1.innerText = "Mustang GT";
+        }
+    </script>
+
 
     <Body>
 
